@@ -13,6 +13,7 @@ import { Client } from "pg";
 import { DatabaseSync } from "db-sync-package";
 import { EventHandlers } from "db-sync-package";
 import { PrimaryClient } from "db-sync-package";
+import { BackupClient } from "db-sync-package";
 
 const primaryClient = new PrimaryClient(
   "your_primary_user",
@@ -21,7 +22,7 @@ const primaryClient = new PrimaryClient(
   "your_primary_password"
 );
 
-const backupClient = new PrimaryClient(
+const backupClient = new BackupClient(
   "your_backup_user",
   "your_backup_host",
   "your_backup_database",
