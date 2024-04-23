@@ -6,10 +6,6 @@ This package provides a solution for synchronizing data between a primary and a 
 
 To install the package, run the following command:
 
-```bash
-npm install db-sync-package
-```
-
 # Usage
 
 ```ts
